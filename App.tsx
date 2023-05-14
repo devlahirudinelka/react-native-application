@@ -3,6 +3,7 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import { View, Text, SafeAreaView, StyleSheet } from 'react-native';
+import ColorBox from './components/ColorBox';
 const App = () => {
   return (
     <>
@@ -32,6 +33,10 @@ const App = () => {
               Orange: #cb4b16
             </Text>
           </View>
+          <ColorBox colorName="Cyan" colorHex="#2aa198" />
+          <ColorBox colorName="Blue" colorHex="#268bd2" />
+          <ColorBox colorName="Magenta" colorHex="#d33682" />
+          <ColorBox colorName="Orange" colorHex="#cb4b16" />
         </View>
       </SafeAreaView>
     </>
@@ -41,7 +46,7 @@ const App = () => {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: 'white',
+    // backgroundColor: 'green',
   },
   container: {
     paddingTop: 50,
